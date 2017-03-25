@@ -88,3 +88,5 @@ Application Options:
 Help Options:
   -h, --help           Show this help message
 ```
+
+Example: `./ifconfigd -t /root/ifconfigd/template.html -H X-Real-IP -c /root/geolite/GeoLite2-City.mmdb -f /root/geolite/GeoLite2-Country.mmdb`
