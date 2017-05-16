@@ -89,8 +89,10 @@ Help Options:
   -h, --help           Show this help message
 ```
 
-### Example
+### Installation and Example Usage
+When you have built the package, copy the binary to `/usr/bin`. For example `cp /root/go/bin/ifconfigd /usr/bin/ifconfigd` or create a symlink.
 
+Then run the application by issuing the following command (assuming paths are correct):
 ```
-./ifconfigd -t /root/ifconfigd/template.html -H X-Real-IP -c /root/geolite/GeoLite2-City.mmdb -f /root/geolite/GeoLite2-Country.mmdb
+ifconfigd -t /home/k0nsl/ifconfigd/template.html -H X-Real-IP -c /home/k0nsl/geolite/GeoLite2-City.mmdb -f /home/k0nsl/geolite/GeoLite2-Country.mmdb
 ```
