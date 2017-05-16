@@ -96,3 +96,4 @@ Then run the application by issuing the following command (assuming paths are co
 ```
 ifconfigd -t /home/k0nsl/ifconfigd/template.html -H X-Real-IP -c /home/k0nsl/geolite/GeoLite2-City.mmdb -f /home/k0nsl/geolite/GeoLite2-Country.mmdb
 ```
+I run this on Alpine Linux and my copy can be found by visiting https://ifconfig.k0nsl.org (it looks horrible at the moment -- be warned)
