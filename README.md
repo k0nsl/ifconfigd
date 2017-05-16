@@ -13,32 +13,32 @@ Just the business, please:
 $ curl ifconfig.co
 127.0.0.1
 
-$ wget -qO - ifconfig.co
+$ wget -qO - ifconfig.k0nsl.org
 127.0.0.1
 
-$ fetch -qo - ifconfig.co
+$ fetch -qo - ifconfig.k0nsl.org
 127.0.0.1
 ```
 
 A specific header:
 
 ```
-$ curl ifconfig.co/user-agent
+$ curl ifconfig.k0nsl.org/user-agent
 curl/7.43.0
 
-$ curl ifconfig.co/x-ifconfig-country
+$ curl ifconfig.k0nsl.org/x-ifconfig-country
 Norway
 ```
 
 As JSON:
 
 ```
-$ curl -H 'Accept: application/json' ifconfig.co
+$ curl -H 'Accept: application/json' ifconfig.k0nsl.org
 {
   "x-ifconfig-ip": "127.0.0.1"
 }
 
-$ curl ifconfig.co/x-config-ip.json
+$ curl ifconfig.k0nsl.org/x-config-ip.json
 {
   "x-ifconfig-ip": "127.0.0.1"
 }
@@ -47,7 +47,7 @@ $ curl ifconfig.co/x-config-ip.json
 Pass the appropriate flag (usually -4 and -6) to your tool to switch between
 IPv4 and IPv6 lookup.
 
-The subdomain http://v4.ifconfig.co can be used to force IPv4 lookup.
+The primary domain https://ifconfig.k0nsl.org can be used to force IPv4 lookup or IPv6 lookups (i.e `curl -4` or `curl -6`).
 
 ## Features
 
